@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
             To get started, edit the{" "}
             <code className={styles.code}>page.js</code> file.
           </h1>
+          <div>
+            <Link href="/info">Nova página</Link>
+          </div>
           <p>
             Looking for a starting point or more instructions? Head over to{" "}
             <a
