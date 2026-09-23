@@ -31,7 +31,13 @@ export default function Info() {
         </p>
           <div>
             <Link href="/">Home página</Link>
-          </div>
+        </div>
+        <div>
+            <Link href="/user/uj33">User 33</Link>
+        </div>
+        <div>
+            <Link href="/user/qu40">User 40</Link>            
+        </div>
     </div>
   );
 }
