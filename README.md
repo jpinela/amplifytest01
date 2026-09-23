@@ -14,3 +14,6 @@ settings -> applications -> amplify studio (para definir repos e cenas)
 ## Getting Started
 
 mandar oisto para o ammplify. vamos ver.
+funcionou. super simples até. 
+uma pagina (com tudo no src, api dnetro da src/app) com uma chamada da API bombou. ok. já é qq coisa.
+mas acho que teve de criar uma EC2. ui.......

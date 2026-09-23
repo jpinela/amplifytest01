@@ -6,7 +6,7 @@ export async function GET(request) {
   const lang = searchParams.get("lang") || "pt";
 
   try {
-    return Response.json({ success: true, data: "bonjour monsieur! "+Math.floor(Math.random() * 100) });
+    return Response.json({ success: true, data: ""+Math.floor(Math.random() * 100) });
   } catch (err) {
     return Response.json(
       { success: false, error: "API: Failed send one f'ing string" },
