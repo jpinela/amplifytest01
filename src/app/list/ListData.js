@@ -17,6 +17,12 @@ import {
 import RefreshIcon from "@mui/icons-material/Refresh";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
+
+
+
+import LogoutIcon from "@mui/icons-material/Logout";
+
 
 // Placeholder for your AAAAA function (replace with your actual import)
 async function AAAAA() {
@@ -79,10 +85,31 @@ export default function ListData({session}) {
           <Typography variant="h4" component="h1" fontWeight={700} gutterBottom>
             Agreements Overview
           </Typography>
-          <Link href="/info">Info Pgae</Link>        
+          <Button
+            size="medium"
+            variant="outlined"
+            color="error"
+            startIcon={<LogoutIcon />}
+            onClick={() => signOut({ callbackUrl: "/" })}
+            sx={{ borderRadius: 2, textTransform: "none", fontWeight: 600 }}
+          >
+            SignOut
+          </Button>  
+          <Button
+            size="medium"
+            variant="outlined"
+            color="error"
+            startIcon={<LogoutIcon />}
+            href="/info"
+            sx={{ borderRadius: 2, textTransform: "none", fontWeight: 600 }}
+          >
+            Info Page
+          </Button>            
+          <Box>   
           <Typography variant="body1" color="text.secondary">
             Displaying Agreement List
           </Typography>
+          </Box>
         </Box>
         <Button
           variant="outlined"
