@@ -91,3 +91,8 @@ https://docs.amplify.aws/nextjs/build-a-backend/
 
 https://docs.amplify.aws/react/build-a-backend/storage/set-up-storage/
 
+
+## ENV Vars no Amplify Console
+https://docs.aws.amazon.com/amplify/latest/userguide/environment-variables.html
+
+não podem começar com AWS_ . isso é reservado.
