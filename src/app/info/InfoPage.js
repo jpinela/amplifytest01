@@ -56,7 +56,7 @@ export default function Info({session}) {
               variant="outlined"
               onClick={() => signOut({ callbackUrl: `/` })}
               className={styles.logoutBtn}
-            >SignOut</Button>
+            >sign out</Button>
         </div>
     </div>
   );
