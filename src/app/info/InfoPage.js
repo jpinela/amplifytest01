@@ -51,6 +51,9 @@ export default function Info({session}) {
             <Link href="/user/qu40">User 40</Link>            
         </div>
         <div>
+            <Link href="/list">List Data</Link>            
+        </div>        
+        <div>
             <Button
               size="medium"
               variant="outlined"
