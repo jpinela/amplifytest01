@@ -11,6 +11,30 @@ para fazer push tive que
 
 settings -> applications -> amplify studio (para definir repos e cenas)
 
+lembrar de definir secrets no env variables do amplify studio. E de as mandar para o build com a linha em baixo (NECESSARIO, senão 500 error)
+
+hosting -> Build Settings
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --cache .npm --prefer-offline
+    build:
+      commands:
+        - env | grep -E 'GOOGLE_CLIENT_ID|GOOGLE_CLIENT_SECRET|NEXTAUTH_SECRET|NEXTAUTH_URL|AUTH_TRUST_HOST' >> .env.production
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - .npm/**/*
+```
+
 ## Getting Started
 
 mandar oisto para o ammplify. vamos ver.
