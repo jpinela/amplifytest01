@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Amplify Test",
+  title: `Amplify Test - ${process.env.ENVTYPE || "Prod"} `,
   description: "Test this s*it",
 };
 
