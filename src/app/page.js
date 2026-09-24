@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
+//import { Amplify } from 'aws-amplify';
+
+
 export default function Home() {
   return (
     <div className={styles.page}>

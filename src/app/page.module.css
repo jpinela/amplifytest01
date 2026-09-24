@@ -148,3 +148,9 @@ a.secondary {
   padding: 0.1em 0.4em;
   border-radius: 6px;
 }
+
+.logoutBtn {
+  text-transform: none !important;
+  font-size: 0.775rem !important;
+  color: #d93025 !important;
+}

@@ -43,3 +43,9 @@ D:.
 ## Para definir S3 Storage parece simples...
 
 https://docs.amplify.aws/react/build-a-backend/storage/set-up-storage/
+
+## Para definir os Back-ends
+
+https://docs.amplify.aws/nextjs/build-a-backend/
+
+
