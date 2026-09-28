@@ -45,7 +45,7 @@ export default function BackgroundSlider({ activeIndex, onSlideChange }) {
   useEffect(() => {
     const timer = setInterval(() => {
       onSlideChange((prev) => (prev + 1) % EXAM_SLIDES.length);
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(timer);
   }, [onSlideChange]);
@@ -76,12 +76,12 @@ export default function BackgroundSlider({ activeIndex, onSlideChange }) {
       <div className={styles.overlay} />
 
       {/* Floating Exam Info Badge */}
-      <div className={styles.examLabelPill}>
+      {false && <div className={styles.examLabelPill}>
         <span className={styles.examPulseDot} />
         <span>
           <strong>{activeSlide.title}</strong> — {activeSlide.subtitle}
         </span>
-      </div>
+      </div>}
 
       {/* Slide Navigation Progress Indicators */}
       <div className={styles.controlsBar}>

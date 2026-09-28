@@ -49,10 +49,10 @@ export default function ComingSoonContent() {
           </p>
 
           {/* Interactive Exam Chips / Categories that reflect the rotating images */}
-          <ExamChips
+          {false && <ExamChips
             activeIndex={activeIndex}
             onSelectIndex={setActiveIndex}
-          />
+          />}
         </main>
 
         {/* Footer */}
@@ -62,7 +62,7 @@ export default function ComingSoonContent() {
           </div>
           <div className={styles.footerRight}>
             <a href="mailto:info@marcarexames.com" className={styles.footerLink}>
-              info@marcarexames.com
+              apoio@marcarexames.com
             </a>
             <span className={styles.footerDivider}>•</span>
             <span className={styles.footerLocation}>Portugal</span>
